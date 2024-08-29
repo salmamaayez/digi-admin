@@ -1,0 +1,118 @@
+/* src/styles/modal.css */
+/*.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(3, 3, 3, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 8px;
+  width: 600px;
+}
+
+.modal-content form {
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(1px, auto);
+}
+
+.modal-content label {
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+
+.modal-content button {
+  margin-top: 10px;
+
+}*/
+.modal {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #333333;
+  text-align: center;
+}
+
+.modal-content form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.modal-content label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #555555;
+}
+
+.modal-content input, .modal-content select {
+  padding: 10px;
+  border: 2px solid #cccccc;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  margin-top: 10px;
+}
+.modal-content button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  grid-column:  2;
+}
+
+.modal-content button[type="button"] {
+  background-color: #f44336;
+}
+
+.modal-content button:hover {
+  opacity: 0.9;
+}
+
+.modal-content .error {
+  grid-column: span 2;
+  color: red;
+  text-align: center;
+}
+

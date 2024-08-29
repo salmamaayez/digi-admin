@@ -1,0 +1,45 @@
+/* TableItem.css */
+
+.table-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px;
+  width: 140px; /* Augmente la largeur pour mieux s'adapter aux icônes */
+  height: 140px; /* Augmente la hauteur pour mieux s'adapter aux icônes */
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.table-wrapper:hover {
+  transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.table-icon {
+  font-size: 40px; /* Ajustez la taille de l'icône de table si nécessaire */
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.trash-icon {
+  color: #f44336;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trash-icon:hover {
+  color: #d32f2f;
+}
+
+.table-number {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333;
+  margin: 0;
+}
